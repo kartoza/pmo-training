@@ -1,0 +1,51 @@
+{
+	"name": "python-class-generator",
+	"displayName": "Python Class Generator",
+	"description": "Will generate a Python class in the open project directory based on user input",
+	"version": "0.0.3",
+	"publisher": "jamesqquick",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jamesqquick/Python-Class-Creator-Extension"
+	},
+	"engines": {
+		"vscode": "^1.30.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.createPyClass"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.createPyClass",
+				"title": "Create Python Class"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"eslint": "^5.13.0",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	},
+	"__metadata": {
+		"id": "0a6db049-4a75-4f19-b111-74b17b1e97cd",
+		"publisherId": "7193aa76-7d84-44a6-9662-625372fa15de",
+		"publisherDisplayName": "James Quick",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1727256167892,
+		"source": "gallery"
+	}
+}
